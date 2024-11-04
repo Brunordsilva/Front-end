@@ -1,3 +1,49 @@
-thead{
-    background-color: black;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #555;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+audio {
+    width: 80px;
 }
