@@ -1,0 +1,16 @@
+
+header{
+    display: flex;
+    text-align: center;
+}
+footer{
+    text-align: right;
+}
+
+aside{
+    text-align: left;
+}
+nav{
+    display: flex;
+    text-align: right;
+}
