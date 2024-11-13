@@ -1,14 +1,18 @@
-footer .algo {
-    display: flex;
-    align-self: flex-end;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-footer .bla {
+.footer {
     display: flex;
-    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
 
-footer .exemplo {
-    display: flex;
-    justify-content: flex-start;
+.footer div {
+    font-size: 18px;
 }
