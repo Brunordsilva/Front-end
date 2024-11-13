@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+main p{
+  display: flex;
+  order: 7;
+}
+main h1{
+    display: flex;
+    order: 9;
+}
+main h2{
+    display: flex;
+    
+    order: 3;
+}

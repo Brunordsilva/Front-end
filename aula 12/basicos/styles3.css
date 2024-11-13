@@ -1,0 +1,17 @@
+main h1 ul{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+main h2 ul{
+    display: flex;
+
+    justify-content: space-around;
+}
+
+main h3 ul{
+    display: flex;
+
+    justify-content: space-evenly;
+}

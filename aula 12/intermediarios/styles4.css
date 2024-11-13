@@ -1,0 +1,14 @@
+footer .algo {
+    display: flex;
+    align-self: flex-end;
+}
+
+footer .bla {
+    display: flex;
+    align-self: center;
+}
+
+footer .exemplo {
+    display: flex;
+    justify-content: flex-start;
+}
