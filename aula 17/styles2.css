@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+}
