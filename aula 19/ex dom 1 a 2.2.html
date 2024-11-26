@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de DOM</title>
+</head>
+
+<body>
+    <h1 id="titulo">Olá, Mundo!</h1>
+    <p class="paragrafo">Este é um exemplo de manipulação de DOM.</p>
+
+    <script>
+        // Acessando elementos
+        let titulo = document.getElementById('titulo');
+        let paragrafo = document.querySelector('.paragrafo');
+
+        // Modificando conteúdo
+        titulo.innerHTML = 'Novo Título';
+        paragrafo.style.color = 'blue'; // Alterando a cor do texto
+        let novoParagrafo = document.createElement('p'); // Cria um novo <p>
+        novoParagrafo.innerHTML = 'Este é um novo parágrafo!';
+        document.body.appendChild(novoParagrafo); // Adiciona ao corpo da página
+
+
+        // Remover um elemento
+        //document.body.removeChild(novoParagrafo); // Remove o parágrafo criado(tira os // do inicio )
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Teclado</title>
+</head>
+
+<body>
+    <h1>Pressione qualquer tecla</h1>
+    <p id="tecla"></p>
+
+    <script>
+        let tecla = document.getElementById('tecla');
+
+        // Capturando o evento de tecla pressionada
+        document.addEventListener('keydown', function (event) {
+            tecla.innerHTML = 'Você pressionou a tecla: ' + event.key;
+        });
+    </script>
+</body>
+
+</html>
