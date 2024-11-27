@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes com OMDb API</title>
+</head>
+
+<body>
+    <h1>Detalhes do Filme</h1>
+    <p id="title"></p>
+    <p id="year"></p>
+    <img id="poster" src="" alt="Poster do filme" />
+
+    <script>
+        const apiKey = 'sua_api_key_aqui'; // Lembre-se de substituir pela sua chave de API
+        fetch(`http://www.omdbapi.com/?t=Inception&apikey=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('title').textContent = `Título: ${data.Title}`;
+                document.getElementById('year').textContent = `Ano: ${data.Year}`;
+                document.getElementById('poster').src = data.Poster;
+            })
+            .catch(error => console.error('Erro:', error));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Filmes</title>
+</head>
+
+<body>
+    <h1>Buscar Filme</h1>
+    <form id="movieForm">
+        <input type="text" id="movieTitle" placeholder="Digite o título do filme" required />
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultado:</h2>
+    <p id="title"></p>
+    <p id="year"></p>
+    <img id="poster" src="" alt="Poster do filme" />
+
+    <script>
+        const apiKey = 'sua_api_key_aqui'; // Lembre-se de substituir pela sua chave de API
+
+        document.getElementById('movieForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Evita o envio padrão do formulário
+
+            const movieTitle = document.getElementById('movieTitle').value;
+
+            fetch(`http://www.omdbapi.com/?t=${movieTitle}&apikey=${apiKey}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.Response === "True") {
+                        document.getElementById('title').textContent = `Título: ${data.Title}`;
+                        document.getElementById('year').textContent = `Ano: ${data.Year}`;
+                        document.getElementById('poster').src = data.Poster;
+                    } else {
+                        document.getElementById('title').textContent = 'Filme não encontrado';
+                        document.getElementById('year').textContent = '';
+                        document.getElementById('poster').src = '';
+                    }
+                })
+                .catch(error => console.error('Erro:', error));
+        });
+    </script>
+</body>
+
+</html>
