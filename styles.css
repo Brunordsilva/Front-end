@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f0f8ff, #a2d9ff);
+    color: #333;
+}
+
+h1 {
+    color: #FF4500;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+    width: 80%;
+    max-width: 300px;
+}
+
+input:focus {
+    border-color: #FF6347;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5);
+}
+
+button {
+    background-color: #FF4500;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 150px;
+}
+
+button:hover {
+    background-color: #e53e00;
+    transform: scale(1.05);
+}
+
+#pokemonInfo, #tipoinfo {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#pokemonInfo h2, #tipoinfo h2 {
+    font-size: 1.8rem;
+    color: #FF4500;
+    margin-bottom: 10px;
+}
+
+#pokemonInfo p, #tipoinfo p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    border: 3px solid #FF4500;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5);
+}
