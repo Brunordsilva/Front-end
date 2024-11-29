@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
+    <title>Pokémon Finder</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Pokédex</h1>
-    <input type="text" id="pokemonName" placeholder="Digite o nome ou id do Pokémon">
-    <button id="searchButton">Buscar</button>
-
-    <div id="pokemonInfo">
-        <h2 id="pokemonTitle"></h2>
-        <img id="pokemonImage" src="" alt="Imagem do Pokémon">
-        <p id="pokemonType"></p>
-        <p id="pokemonStats"></p>
-    </div>
-
-    <h1>Informação de Tipo</h1>
-    <input type="text" id="tipo" placeholder="Digite o tipo">
-    <button id="busque">Buscar</button>
-
-    <div id="tipoinfo">
-        <h2 id="tiponome"></h2>
-        <p id="info"></p>
-        <p id="weakness"></p>
-    </div>
-
+    <header>
+        <h1>Pokémon Finder</h1>
+    </header>
+    <main class="container">
+        <section class="search">
+            <h2>Procurar Pokémon</h2>
+            <input id="pokemonName" type="text" placeholder="Nome do Pokémon">
+            <button id="searchButton">Buscar</button>
+        </section>
+        <section class="info" id="pokemonInfo" style="display: none;">
+            <h2 id="pokemonTitle"></h2>
+            <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+            <p id="pokemonType"></p>
+            <p id="pokemonStats"></p>
+        </section>
+        <section class="search">
+            <h2>Procurar Tipo</h2>
+            <input id="tipo" type="text" placeholder="Nome do Tipo">
+            <button id="busque">Buscar</button>
+        </section>
+        <section class="info" id="tipoinfo" style="display: none;">
+            <h2 id="tiponome"></h2>
+            <p id="info"></p>
+            <p id="weakness"></p>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
-
 </html>
